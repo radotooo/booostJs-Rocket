@@ -11,7 +11,6 @@ export default class Animation {
   }
 
   async animate() {
-    gsap.registerPlugin(MotionPathPlugin);
     this._rocketTween = gsap.to(this._rocketElement, {
       motionPath: {
         path: this._svgPath,
@@ -34,6 +33,8 @@ export default class Animation {
   }
 
   start() {
+    gsap.registerPlugin(MotionPathPlugin);
+
     this._backgroundElement.addEventListener('click', () => {
       this.eventHandler(this.toggle);
     });
