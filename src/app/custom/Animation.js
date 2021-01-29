@@ -26,6 +26,7 @@ export default class Animation {
   eventHandler(condition) {
     if (condition) {
       this._rocketTween.kill();
+      this._rocketTween = null;
     } else {
       this.animate();
     }
