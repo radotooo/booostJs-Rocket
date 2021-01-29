@@ -9,11 +9,33 @@
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
+			height: 1vh;
+      background-color: rgb(75, 74, 74);
+		}
+		.background {
+			background-image: url(./src/assets/background.png);
+			background-size: 1600px;
+			width: 1600px;
+			height: 800px;
+		}
+		.planet {
+			width: 1500px;
+			margin-left: 140px;
+		}
+		.rocket {
+			width: 130px;
+			position: absolute;
+			margin-left: 1450px;
+			margin-top: -750px;
+			transform: rotate(-180deg);
 		}
 	</style>
 
 </head>
 <body>
-
+	<div class='background'>
+		<img class='planet' src="./src/assets/planet.png"></img>
+		<img class='rocket' src="./src/assets/rocket.png"></img>
+	</div>
 </body>
 </html>
